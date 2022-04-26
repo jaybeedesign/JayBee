@@ -22,11 +22,11 @@ def start():
     #Farben
 
     #Websites abrufen
-    with urllib.request.urlopen("https://json.jurka.ch/websites.json") as url:
+    with urllib.request.urlopen("#") as url:
         data = json.loads(url.read().decode())
 
     #Blacklist abrufen
-    with urllib.request.urlopen("https://json.jurka.ch/blacklist.json") as blacklist:
+    with urllib.request.urlopen("#") as blacklist:
         bldata = json.loads(blacklist.read().decode())
 
 
